@@ -4,20 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "npm-git install",
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^3.5.1",
     "express": "^4.16.2",
     "flexbox-react": "^4.4.0",
     "jquery": "^3.2.1",
     "mongoose": "^4.13.9",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "nodemon": "^1.14.11",
+    "npm-git-install": "^0.3.0",
     "react-materialize": "^1.1.2",
-    "react-redux": "^5.0.6",
-    "react-router-dom": "^4.2.2",
     "react-thunk": "^1.0.0",
     "redux": "^3.7.2"
   }

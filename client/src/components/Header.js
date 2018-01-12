@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
+import { Navbar } from 'react-materialize';
+import NavItem from 'react-materialize/lib/NavItem';
 
 class Header extends Component {
-  
-
   render() {
     return(
-      <div>
-      </div>  
+      <Navbar brand='' right>
+        <NavItem>Portfolio</NavItem>
+        <NavItem href='/contact/'>Contact</NavItem>
+      </Navbar>  
     )  
   }
 }

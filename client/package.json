@@ -1,0 +1,48 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": {
+    "/auth/google": {
+      "target": "http://localhost:3005"
+    },
+    "/api/*": {
+      "target": "http://localhost:3005"
+    }
+  },
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "concurrently": "^3.5.0",
+    "flexbox-react": "^4.4.0",
+    "jquery": "^3.2.1",
+    "keymaster": "^1.6.2",
+    "materialize-css": "^0.100.2",
+    "npm-git-install": "^0.3.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-materialize": "^1.1.2",
+    "react-popup": "^0.9.1",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "^1.0.17",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "webpack-cli": "^1.5.3"
+  },
+  "peerDependencies": {
+    "react": "16.2.0",
+    "react-dom": "~16.2.0"
+  },
+  "scripts": {
+    "install": "npm-git install",
+    "start": "set PORT=3006 && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.8",
+    "webpack": "^3.10.0"
+  }
+}

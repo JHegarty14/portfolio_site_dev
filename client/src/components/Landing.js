@@ -4,6 +4,7 @@ class Landing extends Component {
   render() {
     return(
       <div>
+        TEST 
       </div>    
     )
   }

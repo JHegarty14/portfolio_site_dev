@@ -15,7 +15,7 @@ class App extends Component {
           <Header />
           <Landing path="/" />
           <Contact path="/contact/" />
-          <Footer />
+          <FooterNav />
         </BrowserRouter>
       </div>
     )
